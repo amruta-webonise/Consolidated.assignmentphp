@@ -1,0 +1,131 @@
+
+body
+{
+    background-image:url('/home/webonise/AmrutaTajane/MainAssignment/images/abc.jpg');
+    background-repeat:no-repeat;
+    line-height:14px;
+    font-size: 12px;
+    font-family: Arial,  Verdana, Helvetica, sans-serif;
+    margin:0pt;
+    cursor:default;
+    overflow: hidden;
+}
+
+html,body
+{
+    height:100%;
+    text-align: center;
+}
+
+
+#registration
+{
+    padding: 0 10px 10px;
+    width:550px;
+    height:450px;
+    border: 3px solid #999;
+    border-radius: 10px;
+}
+#fetch
+{
+    padding: 0 10px 10px;
+    width:550px;
+    height:450px;
+  
+}
+#registration label
+{
+    display: block;
+    color: white;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+#registration input
+{
+    width: 300px;
+    padding: 6px;
+    color: #006600;
+    font-family: Arial,  Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    border: 1px solid #cecece;
+}
+#fetch input
+{
+    width: 300px;
+    padding: 6px;
+    color: #006600;
+    font-family: Arial,  Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    border: 1px solid #cecece;
+}
+#registration #description
+{
+    width: 300px;
+    height: 150px;
+    padding: 6px;
+    color:#006600;
+    font-family: Arial,  Verdana, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    border: 1px solid #cecece;
+}
+
+h1
+{
+    margin-top:2cm;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.2em;
+    color: white;
+    margin-bottom: 1em;
+}
+
+#container
+{
+    width: 600px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+#registration div span
+{
+
+    color: #b1b1b1;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#registration #submit
+{
+    width:10em;
+    margin-top:2cm;
+    background: white;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+  
+   
+}
+
+#registration #submit:hover
+{
+    background: green;
+}
+
+#fetch #showUsers
+{
+    width:10em;
+    margin-top:2.5cm;
+    background: white;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+#fetch #showUsers:hover
+{
+    background: green;
+}
+

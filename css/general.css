@@ -1,0 +1,133 @@
+
+body
+{
+   background-color: black;
+
+    line-height:14px;
+    font-size: 12px;
+    font-family: Arial,  Verdana, Helvetica, sans-serif;
+    margin:0pt;
+    cursor:default;
+    overflow: hidden;
+}
+
+html,body
+{
+    height:100%;
+    text-align: center;
+}
+
+
+#registration
+{
+    padding: 0 10px 10px;
+    width:550px;
+    height:550px;
+    border: 3px solid #999;
+    border-radius: 10px;
+}
+#fetch
+{
+    padding: 0 10px 10px;
+    width:550px;
+    height:450px;
+  
+}
+#registration label
+{
+    display: block;
+    color: #f5f5f5;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+#registration input
+{
+    width: 300px;
+    padding: 6px;
+    color: black;
+    font-family: Arial,  Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    border: 1px solid #cecece;
+}
+#fetch input
+{
+    width: 300px;
+    padding: 6px;
+    color: #006600;
+    font-family: Arial,  Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    border: 1px solid #cecece;
+}
+#registration #description
+{
+    width: 300px;
+    height: 150px;
+    padding: 6px;
+    color:black;
+    font-family: Arial,  Verdana, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    border: 1px solid #cecece;
+}
+
+h1
+{
+    margin-top:2cm;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.2em;
+    color: white;
+    margin-bottom: 1em;
+}
+
+#container
+{
+    width: 600px;
+    margin: 0px auto;
+    text-align: left;
+}
+
+#registration div span
+{
+    color: gray;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#registration #submit
+{
+    width:10em;
+    margin-top:1.5cm;
+    background: white;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+  
+   
+}
+
+#registration #submit:hover
+{
+    background: green;
+}
+
+#fetch #showEmployees
+{
+    width:10em;
+    margin-top:1.5cm;
+    background: white;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+
+
+}
+
+#fetch #showEmployees:hover
+{
+    background: green;
+}
+
+
+
