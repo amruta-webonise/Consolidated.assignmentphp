@@ -32,23 +32,26 @@ class Form
         }
     }
 
-    function AddUser($emp_name,$emp_age,$emp_gender,$emp_email,$emp_address,$emp_pincode,$emp_description,$emp_id)
+    function EditUser($emp_name,$emp_age,$emp_gender,$emp_email,$emp_address,$emp_pincode,$emp_description,$emp_id)
     {
         $uploaddir = '/home/webonise/Projects/php/app2012/ConsolidatedAssignment/photos/';
         $uploadfile = $uploaddir . basename($_FILES['photo']['name']);
         $file= $_FILES['photo']['name'];
         echo $uploadfile;
         echo '<pre>';
-        if (move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile)) {
+        if (move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile))
+        {
             echo "File is valid, and was successfully uploaded.\n";
-            $sql = 'UPDATE employees
-        SET name="'.$emp_name.'",age='.$emp_age.',gender="'.$emp_gender.'",email="'.$emp_email.'",address="'.$emp_address.'",pincode='.$emp_pincode.',photo="'.$file.'" WHERE id='.$emp_id.' ';
-echo $emp_name;
+            $sql = 'UPDATE employees SET name="'.$emp_name.'",age='.$emp_age.',gender="'.$emp_gender.'",email="'.$emp_email.'",address="'.$emp_address.'",pincode='.$emp_pincode.',description="'.$emp_description.'",photo="'.$file.'" WHERE emp_id='.$emp_id.' ';
+            echo $sql;
+            echo $emp_name;
             echo $emp_id;
+
             if(mysql_query($sql))
             {
                 echo'<br/>values inserted';
             }
+
 
         }
         else {
@@ -71,6 +74,6 @@ $emp_pincode = $_POST['pincode'];
 $emp_description = $_POST['description'];
 $emp_photo = $_POST['photo'];
 
-$formObject->AddUser($emp_name,$emp_age,$emp_gender,$emp_email,$emp_address,$emp_pincode,$emp_description,$emp_id);
+$formObject->EditUser($emp_name,$emp_age,$emp_gender,$emp_email,$emp_address,$emp_pincode,$emp_description,$emp_id);
 
 ?>

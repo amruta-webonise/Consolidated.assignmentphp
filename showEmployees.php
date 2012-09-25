@@ -51,15 +51,17 @@ $i=0;
                     <td>'.$row['address'].'</td>|
                     <td>'.$row['pincode'].'</td>|
                     <td>'.$row['description'].'</td>|
-                    <td>'.$row['photo'].'</td>
-                    <td><img src = "http://spikefour.webonise.com/photos/"'.$row['photo']."/></td>";
+                    <td>'.$row['photo']."</td>
+                    <td><img src = 'http://spikefour.webonise.com/photos/".$row['photo']."'width=100 height=100></td>";
 
                     echo '<form name="edit" action="http://spikefour.webonise.com/edit.php" method="get">
                 <input type="hidden" name="id" value="'.$row['emp_id'].'" />
              <input type="submit" value="edit" />
               </form>';
-                  echo '<td><a href = "delete.php">delete</a>
-                    </tr><br/>';
+                echo '<form name="delete" action="http://spikefour.webonise.com/delete.php" method="get">
+                <input type="hidden" name="id" value="'.$row['emp_id'].'" />
+             <input type="submit" value="delete" />
+              </form>';
 
 
             }

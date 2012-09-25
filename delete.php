@@ -1,16 +1,12 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: webonise
- * Date: 24/9/12
- * Time: 6:34 PM
- * To change this template use File | Settings | File Templates.
- */
+$hostname = 'localhost';
+$username = 'root';
+$password = 'root';
 
 class Delete
 {
 
-    function ConnectToDatabase()
+    function DeleteUser($emp_id)
     {
         $hostname = 'localhost';
         $username = 'root';
@@ -19,19 +15,32 @@ class Delete
         if(is_resource($link))
         {
             /*** if we are successful ***/
-            //  echo 'Connected successfully';
+            echo 'Connected successfully<br/>';
             $db = mysql_select_db('test', $link);
+            echo $emp_id;
+            $sql= 'DELETE from employees where emp_id='.$emp_id;
+            if(mysql_query($sql, $link))
+            {
+                echo '<br/>Record Deleted<br />';
+            }
+            else
+            {
+                echo 'error';
+            }
+
         }
-        else
-        {
-            //    echo 'connection failed';
-        }
-    }
+
 
 }
 
-$delete = new Delete();
-$delete->ConnectToDatabase();
+}
+$deleteObject = new Delete();
+
+
+$emp_id = $_GET['id'];
+
+
+$deleteObject->DeleteUser($emp_id);
 
 
 ?>
